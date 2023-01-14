@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using UsersManagement.Model.Users;
+using UsersManagement.Model.Users.Entities;
 
 namespace UsersManagement.DAL.Users;
 

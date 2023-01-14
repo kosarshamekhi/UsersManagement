@@ -1,4 +1,4 @@
-﻿using UsersManagement.Model.Users;
+﻿using UsersManagement.Model.Users.Entities;
 
 namespace UsersManagement.Model.Notes.Entities;
 

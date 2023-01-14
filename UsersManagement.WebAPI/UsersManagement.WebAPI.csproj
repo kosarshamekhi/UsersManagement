@@ -19,8 +19,4 @@
     <ProjectReference Include="..\UsersManagement.Model\UsersManagement.Model.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

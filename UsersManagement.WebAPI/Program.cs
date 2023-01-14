@@ -1,4 +1,7 @@
+using MediatR;
 using Microsoft.EntityFrameworkCore;
+using UsersManagement.BLL.Users.Commands;
+using UsersManagement.BLL.Users.Queries;
 using UsersManagement.DAL.DbContexts;
 using UsersManagement.DAL.Notes;
 using UsersManagement.DAL.Users;
@@ -10,6 +13,14 @@ builder.Services.AddDbContext<UserDbContext>(c => c.UseInMemoryDatabase("Server=
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<INoteRepository, NoteRepository>();
+
+builder.Services.AddMediatR(
+    typeof(CreateUserAppService).Assembly,
+    typeof(UpdateUserAppService).Assembly,
+    typeof(DeleteUserAppService).Assembly,
+    typeof(GetAllUserAppService).Assembly,
+    typeof(GetUserByIdAppService).Assembly);
+    
 
 
 builder.Services.AddControllers();

@@ -1,6 +1,6 @@
 ﻿using UsersManagement.Model.Notes.Entities;
 
-namespace UsersManagement.Model.Users;
+namespace UsersManagement.Model.Users.Entities;
 
 public class User
 {

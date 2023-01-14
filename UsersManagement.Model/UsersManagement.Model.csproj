@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Users\Entities\" />
+    <Folder Include="Notes\Commands\" />
+    <Folder Include="Notes\Queries\" />
   </ItemGroup>
 
 </Project>

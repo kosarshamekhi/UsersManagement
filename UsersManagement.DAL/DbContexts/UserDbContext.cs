@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using UsersManagement.Model.Notes.Entities;
-using UsersManagement.Model.Users;
+using UsersManagement.Model.Users.Entities;
 
 namespace UsersManagement.DAL.DbContexts;
 

@@ -15,4 +15,9 @@
     <ProjectReference Include="..\UsersManagement.Model\UsersManagement.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Notes\Commands\" />
+    <Folder Include="Notes\Queries\" />
+  </ItemGroup>
+
 </Project>
