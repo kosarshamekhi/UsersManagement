@@ -5,7 +5,7 @@ namespace UsersManagement.DAL.Notes;
 public interface INoteRepository
 {
     IEnumerable<Note> GetAllUserNotes(int userId);
-    Note GetById(int id);
+    Note GetNoteById(int id);
     void AddNote(Note note);
     void UpdateNote(Note note);
     void DeleteNote(int id);

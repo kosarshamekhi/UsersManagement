@@ -17,7 +17,7 @@ public class NoteRepository : INoteRepository
         return (IEnumerable<Note>)notes;
     }
 
-    public Note GetById(int id)
+    public Note GetNoteById(int id)
     {
         Note note = _userDbContext.Notes.FirstOrDefault(u => u.Id == id);
         return note;

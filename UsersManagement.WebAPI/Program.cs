@@ -1,5 +1,7 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using UsersManagement.BLL.Notes.Commands;
+using UsersManagement.BLL.Notes.Queries;
 using UsersManagement.BLL.Users.Commands;
 using UsersManagement.BLL.Users.Queries;
 using UsersManagement.DAL.DbContexts;
@@ -20,6 +22,13 @@ builder.Services.AddMediatR(
     typeof(DeleteUserAppService).Assembly,
     typeof(GetAllUserAppService).Assembly,
     typeof(GetUserByIdAppService).Assembly);
+
+builder.Services.AddMediatR(
+    typeof(CreateNoteAppService).Assembly,
+    typeof(UpdateNoteAppService).Assembly,
+    typeof(DeleteNoteAppService).Assembly,
+    typeof(GetNoteByIdAppService).Assembly,
+    typeof(GetUsersAllNotesAppService).Assembly);
     
 
 
